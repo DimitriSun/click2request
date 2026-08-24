@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Click2Request 面板</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <span>Click2Request</span>
+      <span class="brand-sub">API 录制 · 回放 · 导出</span>
+    </div>
+    <nav class="nav">
+      <a href="#/sessions">会话列表</a>
+    </nav>
+    <div class="topbar-actions">
+      <span id="recording-pill" class="pill hidden"></span>
+      <button id="btn-variables" class="btn ghost">变量</button>
+      <button id="btn-settings" class="btn ghost">设置</button>
+    </div>
+  </header>
+  <main id="view" class="view"></main>
+  <div id="modal-root"></div>
+  <script src="vendor/echarts.min.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

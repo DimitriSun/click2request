@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="popup-header">
+    <div class="logo">
+      <span class="logo-mark"></span>
+      <span>Click2Request</span>
+    </div>
+    <span id="status-dot" class="dot idle"></span>
+  </header>
+
+  <section id="recording-info" class="recording-info hidden">
+    <div id="session-name" class="session-name"></div>
+    <div id="session-meta" class="session-meta"></div>
+  </section>
+
+  <section class="actions">
+    <button id="btn-record" class="btn primary">开始录制</button>
+    <button id="btn-pause" class="btn hidden">暂停</button>
+    <button id="btn-resume" class="btn hidden">继续</button>
+    <button id="btn-stop" class="btn danger hidden">停止</button>
+  </section>
+
+  <section class="actions secondary">
+    <button id="btn-dashboard" class="btn ghost">打开可视化面板</button>
+  </section>
+
+  <footer class="hint">快捷键 Ctrl+Shift+R 快速开关录制</footer>
+  <script src="popup.js"></script>
+</body>
+</html>

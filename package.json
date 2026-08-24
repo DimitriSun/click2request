@@ -1,0 +1,15 @@
+{
+  "name": "click2request",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome extension: record, visualize, replay and export browser API requests for automated testing.",
+  "scripts": {
+    "check": "node scripts/check.js",
+    "smoke": "node scripts/smoke-test.mjs",
+    "gen-icons": "powershell -ExecutionPolicy Bypass -File scripts/gen-icons.ps1",
+    "package": "powershell -ExecutionPolicy Bypass -File scripts/package.ps1",
+    "e2e:fetch-cft": "node scripts/fetch-cft.mjs",
+    "e2e": "node scripts/e2e.mjs"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.zip
+*.crx
+.DS_Store
+Thumbs.db
+.e2e-profile/
+.e2e-out/
+.e2e-cft/
