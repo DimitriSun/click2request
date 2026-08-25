@@ -25,15 +25,16 @@ English intro: A Chrome extension that records browser API traffic with one clic
 - **导出**：curl、Python requests、JMeter (.jmx)、Postman Collection (v2.1)、HAR；可选敏感头脱敏、API 去重；文件直接保存到默认下载目录，文件名带正确扩展名
 - **零流量**：插件运行时不发起任何网络请求（回放是唯一的主动网络操作），断网不影响查看与导出
 
-## 安装（开发者模式）
+## 安装
+### 下载发行版本
+1. Chrome打开扩展程序管理页面(或直接打开chrome://extensions)，打开「开发者模式」
+2. 直接拖入crx文件
+> Edge浏览器需要组策略添加id信任才能开启
 
-1. 下载或 `git clone` 本项目
-2. 打开 Chrome，访问 `chrome://extensions`
-3. 打开右上角「开发者模式」
-4. 点击「加载已解压的扩展程序」，选择项目根目录
-5. 固定扩展图标，即可使用
-
-> 分发到内网机器：执行 `npm run package` 生成 zip，或直接复制项目目录按上述步骤加载。
+### 克隆项目方式：
+1. 下载或git clone项目
+2. Chrome打开扩展程序管理页面(或直接打开chrome://extensions)，打开「开发者模式」
+3. 点击「加载已解压的扩展程序」，选择项目目录
 
 ## 使用流程
 
